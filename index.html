@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mestre Robô - Painel de Controle</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="glitch" data-text="MESTRE_ROBÔ.EXE">MESTRE_ROBÔ.EXE</h1>
+            <p class="subtitle">Painel de Infiltração - Naruto Online</p>
+        </header>
+
+        <main>
+            <section class="panel bot-form-panel">
+                <h2>[+] NOVA INSTÂNCIA</h2>
+                <form id="botForm">
+                    <div class="input-group">
+                        <label for="usuario">LOGIN:</label>
+                        <input type="text" id="usuario" name="usuario" placeholder="usuario_ninja" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="senha">SENHA:</label>
+                        <input type="password" id="senha" name="senha" placeholder="••••••••••••" required>
+                    </div>
+
+                    <button type="submit" class="cyber-btn"><span>INICIAR JUTSU DE AUTOMAÇÃO</span></button>
+                    <p id="form-message"></p>
+                </form>
+            </section>
+
+            <section class="panel status-panel">
+                <h2>[>] CLONES ATIVOS (<span id="count">0</span>)</h2>
+                <div class="bot-list" id="botList">
+                    <!-- Bots ativos renderizados aqui -->
+                    <div class="empty-state">Nenhum Jutsu Ativo no Servidor.</div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
